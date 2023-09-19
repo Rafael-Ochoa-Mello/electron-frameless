@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #949AA7;
+    background-color: #2C313C;
+}
+
+.mainApp{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #343B4B;
+    box-sizing: border-box;
+}
+
+.mainApp > .topBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #343B48;
+    background-color: #1B1D23;
+    user-select: none;
+}
+
+.topBar > .titleBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topBar > .titleBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.titleBar > .title{
+    margin-left: 15px;
+    width: 87%;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color: rgb(230, 237, 240);
+    margin-top: 5px;
+    padding-bottom: 5px;
+    -webkit-app-region: drag;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.topBar > .titleBarBtns{
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 40px;
+}
+
+.titleBarBtns > .topBtn{
+    width: 25px;
+    height: 50px;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.titleBarBtns > .topBtn:hover{
+    background-color: #343B48;
+}
+
+.titleBarBtns > .topBtn:active{
+    background-color: #4F9FEE;
+}
+
+.titleBarBtns > .minimizeBtn img{
+    margin-left: -1px;
+    width: 15px;
+    height: 15px;
+}
+
+.titleBarBtns > .maximizeBtn img{
+    margin-left: -1px;
+    width: 15px;
+    height: 15px;
+}
+
+.titleBarBtns > .restoreBtn img{
+    margin-left: -6px;
+    width: 20px;
+    height: 20px;
+}
+
+.titleBarBtns > .closeBtn img{
+    width: 13px;
+    height: 13px;
+}
+
+.mainApp > .contentArea {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.contentArea > .contentPages{
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-box;
+}
+
+
+
+
+
+
